@@ -43,18 +43,21 @@
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="method1"
             android:text="Button" />
 
         <ImageButton
             android:id="@+id/imageButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:srcCompat="@mipmap/ic_launcher" />
+            android:onClick="method1"
+            app:srcCompat="@mipmap/ic_launcher_round" />
 
         <CheckBox
             android:id="@+id/checkBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="method1"
             android:text="CheckBox" />
 
         <RadioGroup
@@ -67,6 +70,7 @@
                 android:layout_width="285dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="method1"
                 android:text="RadioButton" />
 
             <RadioButton
@@ -74,6 +78,7 @@
                 android:layout_width="284dp"
                 android:layout_height="53dp"
                 android:layout_weight="1"
+                android:onClick="method1"
                 android:text="RadioButton" />
         </RadioGroup>
 
@@ -81,12 +86,14 @@
             android:id="@+id/toggleButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="method1"
             android:text="ToggleButton" />
 
         <Switch
             android:id="@+id/switch1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="method1"
             android:text="Switch" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

@@ -2,12 +2,14 @@ package singh.devendra.uiviews;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Switch;
+import android.widget.Toast;
 import android.widget.ToggleButton;
 
 public class MainActivity extends AppCompatActivity
@@ -41,5 +43,16 @@ public class MainActivity extends AppCompatActivity
         aSwitch = findViewById(R.id.switch1);
         toggleButton = findViewById(R.id.toggleButton);
 
+    }
+
+    public void method1(View view)
+    {
+        switch (view.getId())
+        {
+            case R.id.button2:
+                Toast.makeText(this, "DEV", Toast.LENGTH_SHORT).show();
+                break;
+        }
+      //  Toast.makeText(this, "Devendra" + "Singh" ,Toast.LENGTH_LONG).show();
     }
 }
