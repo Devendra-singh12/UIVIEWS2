@@ -34,7 +34,8 @@ public class MainActivity extends AppCompatActivity
 
         button = findViewById(R.id.button2);
         imageButton = findViewById(R.id.imageButton);
-        checkBox = findViewById(R.id.radioGroup);
+        checkBox = findViewById(R.id.checkBox);
+        radioGroup = findViewById(R.id.radioGroup);
         radioButton1 = findViewById(R.id.radioButton);
         radioButton2 = findViewById(R.id.radioButton2);
         aSwitch = findViewById(R.id.switch1);
