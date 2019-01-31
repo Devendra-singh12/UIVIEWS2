@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -43,6 +44,53 @@ public class MainActivity extends AppCompatActivity
         aSwitch = findViewById(R.id.switch1);
         toggleButton = findViewById(R.id.toggleButton);
 
+        imageButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override // annotation
+            public void onClick(View v)
+            {
+                Toast.makeText(MainActivity.this, "hellloo", Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+         checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener()
+         {
+             @Override
+             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked)
+             {
+                 if (isChecked)
+                 {
+                     char gender = 'M';
+                 }
+
+             }
+         });
+
+         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+             @Override
+             public void onCheckedChanged(RadioGroup group, int checkedId)
+             {
+                 if (checkedId == R.id.radioButton)
+                 {
+                     Toast.makeText(MainActivity.this, "Singh", Toast.LENGTH_SHORT).show();
+                 }
+
+             }
+         });
+         aSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+             @Override
+             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked)
+             {
+
+             }
+         });
+         toggleButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+             @Override
+             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
+             }
+         });
     }
 
     public void method1(View view)
