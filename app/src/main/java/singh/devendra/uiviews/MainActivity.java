@@ -31,5 +31,14 @@ public class MainActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        button = findViewById(R.id.button2);
+        imageButton = findViewById(R.id.imageButton);
+        checkBox = findViewById(R.id.radioGroup);
+        radioButton1 = findViewById(R.id.radioButton);
+        radioButton2 = findViewById(R.id.radioButton2);
+        aSwitch = findViewById(R.id.switch1);
+        toggleButton = findViewById(R.id.toggleButton);
+
     }
 }
