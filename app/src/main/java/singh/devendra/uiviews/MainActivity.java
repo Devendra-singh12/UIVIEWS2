@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity
     //   button, imageButton, checkBox, radioGroup,
     //   radioButton, toggleButton, switch
     //   radioGroup
+    // add comment
          // backward compatibility
 
     private Button button;
